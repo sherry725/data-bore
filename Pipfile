@@ -1,0 +1,7 @@
+[packages]
+scikit-learn = "*"
+django-crispy-forms = "*"
+whitenoise = "*"
+dj-database-url = "*"
+gunicorn = "*"
+django-cors-headers = "==2.2.0"

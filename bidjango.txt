@@ -1,0 +1,29 @@
+conda create --name bidjango python=3.8.5
+conda activate bidjango
+pip install pipenv
+pipenv install django==2.2.0 python-dotenv pandas scikit-learn
+pipenv shell
+django-admin startproject data_bore_project .
+superuser: wusx46, pw: ~86!!
+
+python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py runserver
+
+pipenv install django-crispy-forms
+python -m pip install crispy-bootstrap4
+in project settings.py
+INSTALLED_APPS = [
+'crispy_forms',
+'crispy_bootstrap4',]
+
+pipenv install whitenoise
+
+python -m pip install django-storages
+python -m pip install djangorestframework
+python -m pip install psycopg2
+
+pipenv install dj-database-url gunicorn 
+pipenv install django-cors-headers==2.2.0
